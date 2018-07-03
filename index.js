@@ -111,8 +111,8 @@ function get_gender_prefix() {
 function get_age() {
 
     var age = document.getElementById("age").value;
-
-    if((age === "") || (age <= 0) || (age >= 120)) {
+    
+    if((age === "") || (age <= 0) || (age >= 120) || (isNaN(age))) {
 
         document.getElementById("age_warn").style.visibility = "visible";
         bio_form.age_valid = false;
