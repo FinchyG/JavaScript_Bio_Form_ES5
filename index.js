@@ -181,7 +181,7 @@ function get_interests() {
 
     if(sel_interests_arr.length >= 3) {
 
-        for(i=0; i < sel_interests_arr.length - 2; i++) {
+        for(var i = 0; i < sel_interests_arr.length - 2; i++) {
 
             loop_interests_str += sel_interests_arr[i] + ", ";
         
